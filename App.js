@@ -5,7 +5,7 @@ import AuthenticationPage from './src/AuthenticationPage'
 
 import { ApolloProvider, ApolloClient, createNetworkInterface } from 'react-apollo'
 
-const networkInterface = createNetworkInterface({ uri: 'https://api.graph.cool/simple/v1/cj6j3u1h1045i0150mpfk0o8u' });
+const networkInterface = createNetworkInterface({ uri: '__GRAPHCOOL_ENDPOINT_HERE__' });
 
 networkInterface.use([{
   async applyMiddleware(req, next) {
